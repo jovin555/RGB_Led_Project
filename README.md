@@ -1,6 +1,6 @@
 # ESP32 WS2812B LED Controller
 
-A 4-output, 5 V addressable LED controller built around the ESP32-S3-WROOM-1, designed to run [WLED](https://kno.wled.ge/). The repo holds the KiCad design, a 3D-printable enclosure, and the build and programming docs.
+A simple RGB LED chain controller for lighting up a Christmas tree with an ESP32. It is a 4-output, 5 V addressable LED controller built around the ESP32-S3-WROOM-1, designed to run [WLED](https://kno.wled.ge/). The repo holds the KiCad design, a 3D-printable enclosure, and the build and programming docs.
 
 ![Enclosure, exploded view](docs/enclosure-exploded.png)
 
