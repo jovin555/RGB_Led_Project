@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "esp32_led_controller")(type "KiCad")(uri "${KIPRJMOD}/lib/esp32_led_controller.pretty")(options "")(descr "Project footprints"))
+)

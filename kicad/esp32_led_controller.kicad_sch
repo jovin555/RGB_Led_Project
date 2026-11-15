@@ -1,0 +1,223 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f5fd5520-7d69-46ea-9985-266e86d69d42")
+	(paper "A4")
+	(title_block
+		(title "ESP32 WS2812B Controller")
+		(date "2026-10-20")
+		(rev "0.1")
+		(company "RGB LED Project")
+		(comment 1 "See docs/PCB_DESIGN_PLAN.md")
+	)
+	(lib_symbols)
+	(text "Design plan: docs/PCB_DESIGN_PLAN.md"
+		(exclude_from_sim no)
+		(at 25.4 35.56 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "3fd9993a-da42-4798-9dd6-1ae403154c99")
+	)
+	(text "ESP32-S3 WS2812B LED CONTROLLER - TOP LEVEL"
+		(exclude_from_sim no)
+		(at 25.4 25.4 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "d03d03c4-418e-455d-b551-b0914eddd404")
+	)
+	(text "Nets: +5V_IN (raw input), +5V_LED (high current, fused), +5V_LOGIC, +3V3, GND"
+		(exclude_from_sim no)
+		(at 25.4 30.48 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5d99b86-9024-4a0d-842c-d946c3d59afd")
+	)
+	(sheet
+		(at 213.36 60.96)
+		(size 50.8 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1731f7a9-26db-41c4-8898-07e44d07556d")
+		(property "Sheetname" "LED_Outputs"
+			(at 213.36 60.2488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_outputs.kicad_sch"
+			(at 213.36 92.0242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esp32_led_controller"
+				(path "/f5fd5520-7d69-46ea-9985-266e86d69d42"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 60.96)
+		(size 50.8 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "556db9d4-ba0a-43cb-b19d-cf4d63cbb0b8")
+		(property "Sheetname" "Power"
+			(at 30.48 60.2488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 30.48 92.0242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esp32_led_controller"
+				(path "/f5fd5520-7d69-46ea-9985-266e86d69d42"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 60.96)
+		(size 50.8 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5b7dfa88-ec8e-4417-bc56-b08e79c0b308")
+		(property "Sheetname" "MCU"
+			(at 91.44 60.2488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 91.44 92.0242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esp32_led_controller"
+				(path "/f5fd5520-7d69-46ea-9985-266e86d69d42"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 152.4 60.96)
+		(size 50.8 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "700eda18-29b0-4cb1-80b1-e0eeb769dbc7")
+		(property "Sheetname" "USB"
+			(at 152.4 60.2488 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 152.4 92.0242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esp32_led_controller"
+				(path "/f5fd5520-7d69-46ea-9985-266e86d69d42"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
