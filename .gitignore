@@ -4,3 +4,7 @@ __pycache__/
 
 # Local KiCad project backups
 kicad-backup-*.zip
+
+# PlatformIO build output and local IDE settings
+.pio/
+.vscode/
